@@ -22,8 +22,6 @@ public class MikeHelpMeExtension extends SFSExtension {
         getApi().getSystemScheduler().resizeThreadPool(10);
         //Event Handlers:
         this.addEventHandler(SFSEventType.ROOM_ADDED, RoomAddedEventHandler.class);
-        //Custom Requests Handlers:
-        //this.addRequestHandler("start", StartHandler.class);
     }
 
 }

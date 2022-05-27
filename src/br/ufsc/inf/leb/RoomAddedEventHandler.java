@@ -23,6 +23,7 @@ public class RoomAddedEventHandler extends BaseServerEventHandler {
         turn.setPrivate(true);
 
         RoomVariable timer = new SFSRoomVariable("timer", 0);
+        timer.setGlobal(false);
         timer.setPrivate(true);
 
         String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
